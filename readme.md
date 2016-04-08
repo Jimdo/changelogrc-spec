@@ -24,7 +24,7 @@ Spec
 	   __MUST__ be used for configuration.
 	2. `.changelogrc` files __MUST NOT__ be merged with `.changelogrc` 
 	   files in parent directories unless specified by the `.changelogrc`
-	   itself.
+	   itself (see 5.i.).
 
 3. ### Types
 	1. A `.changelogrc` file __CAN__ provide an array of change "types".
@@ -80,6 +80,11 @@ Spec
 		]
 	}
 	```
+
+5. ### Extend
+	1. A `.changelogrc` file __CAN__ provide an "extend" property specifying
+	   a path to another `.changelogrc` file in with the configuration is
+	   deeply merged.
 
 
 License
